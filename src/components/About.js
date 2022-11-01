@@ -1,12 +1,11 @@
 import React from "react";
 
-function About(props) {
-    console.log(props)
+function About({img="https://via.placeholder.com/215", text}) {
     return (
         <div>
             <aside>
-                <img src={props.image="../assets/logo.svg"} alt="blog logo" />
-                <p>{props.text}</p>
+                <img src={img} alt="blog logo" />
+                <p>{text}</p>
             </aside>
         </div>
     )
